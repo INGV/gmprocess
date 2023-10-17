@@ -26,7 +26,7 @@ docker run -it --rm --name gmprocess_container -v $(pwd)/data:/opt/data gmproces
 
 Once in the docker shell, the following commands should be used to download and process an earthquake:
 - `gmrecords`
-- `gmrecords download -e nc73654060`
+- `gmrecords --eventid nc73654060 download`
 
 More information on the `gmprocess` command line interface is available [here](https://usgs.github.io/groundmotion-processing/contents/tutorials/cli.html)
 
