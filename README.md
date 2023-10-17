@@ -1,5 +1,5 @@
 # gmprocess
-Parsing and processing ground motion data from USGS
+Parsing and processing ground motion data from USGS, in a docker container.
 
 ## Clone the repository
 ```
@@ -24,12 +24,10 @@ docker run -it --rm --name gmprocess_container -v $(pwd)/data:/opt/data gmproces
 ```
 
 Once in the docker shell, the following commands should be used to download and process an earthquake:
-
+- `gmrecords`
 - `gmrecords download -e nc73654060`
-- `gmrecords assemble -e nc73654060`
-- `gmrecords process -e nc73654060`
-- `gmrecords sm -e nc73654060`
-- `gmrecords wm -e nc73654060`
+
+More information on the `gmprocess` command line interface is available [here](https://usgs.github.io/groundmotion-processing/contents/tutorials/cli.html)
 
 # Contribute
 Thanks to your contributions!
