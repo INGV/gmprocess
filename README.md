@@ -28,7 +28,7 @@ Once in the docker shell, the following commands should be used to download and 
 - `gmrecords`
 - `gmrecords --eventid nc73654060 download`
 
-More information on the `gmprocess` command line interface is available [here](https://usgs.github.io/groundmotion-processing/contents/tutorials/cli.html)
+More information on the `gmprocess` command line interface is available [here](https://ghsc.code-pages.usgs.gov/esi/groundmotion-processing/contents/tutorials/cli.html)
 
 # Contribute
 Thanks to your contributions!
