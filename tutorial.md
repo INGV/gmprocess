@@ -62,3 +62,21 @@ total 292
 drwxr-xr-x 2 root root 204800 Oct 18 14:41 raw
 -rw-r--r-- 1 root root    514 Oct 18 14:43 rupture.json
 ```
+
+5) collects the data in the raw directory and organizes it into an ASDF file. If we do not specify the event ID, then all of the events in the data directory will be assembled:
+```
+root@dc2d81188309:/opt/data# gmrecords assemble
+INFO 2023-10-18 14:52:52 | gmrecords._initialize: Logging level includes INFO.
+INFO 2023-10-18 14:52:52 | gmrecords._initialize: PROJECTS_PATH: /opt/data/.gmprocess
+--------------------------------------------------------------------------------
+Project: default **Current Project**
+	Conf Path: /opt/data/conf
+	Data Path: /opt/data/data
+--------------------------------------------------------------------------------
+INFO 2023-10-18 14:52:52 | assemble.main: Running subcommand 'assemble'
+INFO 2023-10-18 14:52:54 | assemble.main: Number of events to assemble: 1
+INFO 2023-10-18 14:52:54 | assemble.main: Assembling event nc73654060 (1 of 1)...
+. . .
+. . .
+root@dc2d81188309:/opt/data#
+```
