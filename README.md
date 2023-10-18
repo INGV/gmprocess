@@ -14,7 +14,7 @@ docker build -t gmprocess .
 ```
 
 ## Run docker container
-Before to run docker container, create a local `data` dir:
+Before to run docker container, create a local `<data>` dir, for example:
 ```
 mkdir /tmp/data_ilaria
 ```
