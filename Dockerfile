@@ -26,7 +26,7 @@ WORKDIR /opt
 RUN git clone https://code.usgs.gov/ghsc/esi/groundmotion-processing.git gmprocess
 
 WORKDIR /opt/gmprocess
-RUN pip install --no-cache-dir --no-deps .
+RUN pip install .
 
 WORKDIR /opt
 
