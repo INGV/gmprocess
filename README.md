@@ -10,7 +10,7 @@ cd gmprocess
 
 ## Build docker image
 ```
-docker build -t gmprocess .
+docker build --no-cache -t gmprocess .
 ```
 
 ## Run docker container
