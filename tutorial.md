@@ -5,7 +5,7 @@ Vi riporto una prima lista di comandi che ho usato.
 docker run -it --rm --name gmprocess_container -v /data/shake/data_valentino:/opt/data gmprocess bash
 ```
 
-2) la prima volta, va eseguito init  che crea due directory: data e conf. In conf ci va il file di configurazione user.yml :
+2) la prima volta, va eseguito init che crea due directory: `data` e `conf`. In `conf` ci va il file di configurazione `user.yml` :
 ```
 root@dc2d81188309:/opt# cd data
 root@dc2d81188309:/opt/data# gmrecords init
@@ -23,6 +23,10 @@ Created Project: default **Current Project**
 	Data Path: /opt/data/data
 root@dc2d81188309:/opt/data#
 ```
+maggiori dettagli sul file di configurazione:
+- guida: https://ghsc.code-pages.usgs.gov/esi/groundmotion-processing/contents/manual/config_file.html#
+- esempio: https://code.usgs.gov/ghsc/esi/groundmotion-processing/blob/main/src/gmprocess/data/config_production.yml
+
 3) scarico i dati di esempio per l’eventid dell’USGS nc73654060:
 ```
 root@dc2d81188309:/opt/data# gmrecords --eventid nc73654060 download
