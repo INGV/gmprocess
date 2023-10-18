@@ -16,12 +16,12 @@ docker build --no-cache -t gmprocess .
 ## Run docker container
 Before to run docker container, create a local `<data>` dir, for example:
 ```
-mkdir /tmp/data_ilaria
+mkdir /tmp/data_valentino
 ```
 
 now, run the container binding `data` dir:
 ```
-docker run -it --rm --name gmprocess_container -v /tmp/data_ilaria:/opt/data gmprocess bash
+docker run -it --rm --name gmprocess_container -v /tmp/data_valentino:/opt/data gmprocess bash
 ```
 
 Once in the docker shell, the following commands should be used to download and process an earthquake:
